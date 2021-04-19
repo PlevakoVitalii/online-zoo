@@ -31,7 +31,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ul[class],
@@ -161,7 +161,7 @@ h3 {
   height: 203px;
   object-fit: cover;
   border-radius: 5px;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 .slider__item {
   position: relative;
@@ -344,7 +344,7 @@ input.bigCheck::-moz-range-thumb {
 }
 .switch__toggle:before {
   position: absolute;
-  content: '';
+  content: "";
   height: 20px;
   width: 20px;
   left: 6px;
@@ -522,7 +522,7 @@ input:checked + .switch__toggle:before {
 }
 .slider__item:hover .pets-in-zoo__text,
 .pets-in-zoo__text:hover {
- max-height: 300px;
+  max-height: 300px;
 }
 /* PAY AND FEED */
 .pay-and-feed {
@@ -810,13 +810,13 @@ input:checked + .switch__toggle:before {
   line-height: 14px;
   color: #bdbdbd;
 }
-input[type='checkbox'] {
+input[type="checkbox"] {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
-input[type='checkbox'] + label:before {
-  content: '\2713';
+input[type="checkbox"] + label:before {
+  content: "\2713";
   color: transparent;
   display: inline-block;
   border: 1px solid #bdbdbd;
@@ -831,7 +831,7 @@ input[type='checkbox'] + label:before {
   transition: color ease 0.3s;
 }
 
-input[type='checkbox']:checked + label:before {
+input[type="checkbox"]:checked + label:before {
   color: #e0e0e0;
 }
 .contact-form__btn {
@@ -889,4 +889,31 @@ input[type='checkbox']:checked + label:before {
   font-size: 12px;
   line-height: 14px;
   color: #bdbdbd;
+}
+
+@media screen and (max-width: 1919px) {
+  .wrapper {
+    max-width: 900px;
+  }
+  .header {
+    background: green;
+  }
+}
+
+@media screen and (max-width: 1119px) {
+  .header {
+    background: rgb(181, 208, 43);
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .header {
+    background: rgb(48, 50, 180);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    background: rgb(239, 60, 78);
+  }
 }
